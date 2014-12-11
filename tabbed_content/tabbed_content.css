@@ -1,0 +1,30 @@
+#tabs {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+#tabs > li {
+    border-left: 1px #000 solid;
+    border-top: 1px #000 solid;
+    display: inline-block;
+    font-size: 1rem;
+    padding: .25em .5em;
+    margin: 0;
+}
+#tabs > li:last-child {
+    border-right: 1px #000 solid;
+}
+
+.tabbed_content {
+    display: none;
+    border: 1px #000 solid;
+    margin-top: 0;
+    padding: 0 .5em;
+}
+#tabbed_content_1,
+.tabbed_content:target {
+    display: block;
+}
+.tabbed_content:target ~ #tabbed_content_1 {
+    display: none;
+}
