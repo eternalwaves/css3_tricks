@@ -1,0 +1,67 @@
+/* give nav a position to orient the menu to it */
+nav {
+    position: relative;
+}
+
+/* hide all buttons */
+nav > .menu-button {
+    display: none;
+    padding-left: 1.25em;
+    position: relative;
+}
+nav > .menu-button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .25em;
+    height: .125em;
+    width: 1em;
+    border-top: .125em #000 solid;
+    border-bottom: .375em #000 double;
+}
+nav > .menu-button:before {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: .25em;
+}
+/* show target and default buttons */
+nav > #menu-button-show,
+nav > .menu-button:target {
+    display: inline;
+}
+/* prevent default button from showing when others are active */
+nav > .menu-button:target ~ #menu-button-show {
+    display: none;
+}
+/* hide menu by default */
+nav > ul,
+nav > #menu-button-show:target ~ ul {
+    display: none;
+}
+/* show menu */
+nav > #menu-button-hide:target ~ ul {
+    display: block;
+}
+
+/* menu styling */
+nav > ul {
+    background: #fff;
+    border: 1px #000 solid;
+    margin: 0;
+    padding-left: 0;
+    position: absolute;
+    left: 0;
+    top: 1em;
+    width: auto;
+}
+nav > ul > li {
+    border-bottom: 1px #000 solid;
+    display: block;
+    list-style: none;
+    padding: .25em;
+    width: auto;
+}
+nav > ul > li:last-child {
+    border-bottom: none;
+}
