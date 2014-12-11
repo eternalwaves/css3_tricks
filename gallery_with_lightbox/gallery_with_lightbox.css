@@ -1,0 +1,38 @@
+/* Navigation */
+.img_nav {
+    padding: 0;
+    text-align: center;
+}
+.img_nav li {
+    display: inline-block;
+    list-style: none;
+}
+.img_nav li::after {
+    content: " |";
+}
+.img_nav li:last-child::after {
+    content: "";
+}
+
+/* Images */
+figure {
+    display: none;
+    text-align: center;
+}
+figure:target {
+    display: block;
+}
+figure.zoom:target {
+    display:block;
+}
+figure.zoom {
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    width: 100%;
+}

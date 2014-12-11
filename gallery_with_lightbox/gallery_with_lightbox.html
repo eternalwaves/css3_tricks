@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pure HTML/CSS3 Gallery with Lightboxes with the :target Selector</title>
+        <link href="gallery_with_lightbox.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <ul class="img_nav">
+            <li><a href="#img1_thumb">1</a></li>
+            <li><a href="#img2_thumb">2</a></li>
+            <li><a href="#img3_thumb">3</a></li>
+        </ul>
+
+        <!-- Your images here -->
+        <figure id="img1_thumb">
+            <a href="#img1"><img src="http://dummyimage.com/300" alt="Img1: 300x300" /></a>
+        </figure>
+        <figure class="zoom" id="img1">
+            <a href="#img1_thumb"><img src="http://dummyimage.com/600" alt="Img1: 600x600" /></a>
+        </figure>
+
+        <figure id="img2_thumb">
+            <a href="#img2"><img src="http://dummyimage.com/300/ff0000/" alt="Img2: 300x300" /></a>
+        </figure>
+        <figure class="zoom" id="img2">
+            <a href="#img2_thumb"><img src="http://dummyimage.com/700/ff0000/" alt="Img2: 700x700" /></a>
+        </figure>
+
+        <figure id="img3_thumb">
+            <a href="#img3"><img src="http://dummyimage.com/300/0000ff/ffffff/" alt="Img3: 300x300" /></a>
+        </figure>
+        <figure class="zoom" id="img3">
+            <a href="#img3_thumb"><img src="http://dummyimage.com/800/0000ff/ffffff/" alt="Img3: 800x800" /></a>
+        </figure>
+    </body>
+</html>
