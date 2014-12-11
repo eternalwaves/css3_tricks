@@ -1,4 +1,4 @@
-css3_tricks
+CSS3 Tricks
 ===========
 
-CSS3 tricks
+Each contained in its own folder with the HTMl and CSS specified. Pretty self-explanatory.
